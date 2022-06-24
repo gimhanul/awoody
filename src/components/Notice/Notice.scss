@@ -1,0 +1,29 @@
+.notice-card {
+  width: 80%;
+  height: 80px;
+  padding: 3.3% 4%;
+  margin: 0 auto 15px;
+  background-color: white;
+  border-radius: 30px;
+
+  .notice-card--title {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+  }
+
+  .notice-card--created-at {
+    display: block;
+
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+  }
+}
