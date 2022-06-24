@@ -1,6 +1,7 @@
-section {
-  width: 1050px;
+@import "../../styles/common";
 
+section {
+  width: 100%;
 
   .main-important {
     width: 100vw;
@@ -37,6 +38,26 @@ section {
   }
 
   .main-today-position {
+    width: 100vw;
+    min-width: 1050px;
+    margin-top: 70px;
 
+    .main-today-position-inner {
+      width: 1050px;
+      margin: 0 auto;
+
+      .main-today-position--title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 51px;
+        color: $dark-black;
+      }
+
+      .main-today-position--card {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
   }
 }

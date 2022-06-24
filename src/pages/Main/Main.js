@@ -1,6 +1,8 @@
 import "./Main.scss";
 import noticeData from "./notice.json";
+import todayPositionData from "./todayPosition.json";
 import Notice from "../../components/Notice/Notice";
+import Position from "../../components/Position/Position";
 
 export default function Main() {
     return (
@@ -23,7 +25,19 @@ export default function Main() {
                 </div>
             </div>
             <div className="main-today-position">
-
+                <div className="main-today-position-inner">
+                    <p className="main-today-position--title">오늘 내 위치</p>
+                    <div className="main-today-position--card">
+                        {
+                            todayPositionData.todayPosition.map(p => (
+                                <Position
+                                    position={p.position}
+                                    classType={p.classType}
+                                />
+                            ))
+                        }
+                    </div>
+                </div>
             </div>
         </section>
     )

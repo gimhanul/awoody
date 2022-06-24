@@ -1,0 +1,25 @@
+{
+  "date": "2022-02-02",
+  "todayPosition": [
+    {
+      "classTime": 8,
+      "position": "2학년 2반 교실",
+      "classType": "방과후"
+    },
+    {
+      "classTime": 9,
+      "position": "2학년 2반 교실",
+      "classType": "방과후"
+    },
+    {
+      "classTime": 10,
+      "position": "2학년 1반 교실",
+      "classType": "자습"
+    },
+    {
+      "classTime": 10,
+      "position": "2학년 1반 교실",
+      "classType": "자습"
+    }
+  ]
+}
