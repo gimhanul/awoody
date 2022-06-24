@@ -15,9 +15,14 @@ ul {
   list-style: none;
 }
 
+li {
+  display: inline-block;
+}
+
 a {
   cursor: pointer;
   text-decoration: none;
+  color: #606060;
 }
 
 button {

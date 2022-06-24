@@ -1,0 +1,46 @@
+@import "../../styles/common.scss";
+
+header {
+  min-width: 1050px;
+  width: 100vw;
+  border-bottom: 1px solid $gray;
+
+  .header-inner {
+    width: 1050px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 11px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 27px;
+  }
+
+  li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    &:hover {
+      a {
+        color: $dark-black;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .header-logo-wrapper {
+    a {
+      display: inline-block;
+    }
+
+    flex: none;
+    margin: 4px 20px 0 0;
+  }
+}
