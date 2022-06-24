@@ -1,4 +1,5 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import "styles/common";
 
 * {
   margin: 0;
@@ -7,9 +8,13 @@
 }
 
 body {
-  background-color: white;
   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-  color: #606060;
+  color: $black;
+  background-color: white;
+}
+
+section {
+  width: 100vw;
 }
 
 ul {
@@ -23,9 +28,13 @@ li {
 a {
   cursor: pointer;
   text-decoration: none;
-  color: #606060;
+  color: $black;
 }
 
 button {
   cursor: pointer;
+}
+
+.purple-background {
+  background-color: $background-purple;
 }

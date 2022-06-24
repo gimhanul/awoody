@@ -1,63 +1,59 @@
 @import "../../styles/common";
 
-section {
-  width: 100%;
+.main-important {
+  width: 100vw;
+  min-width: 1050px;
+  height: 430px;
 
-  .main-important {
-    width: 100vw;
-    min-width: 1050px;
-    height: 430px;
+  .main-important-banner {
+    display: inline-block;
+    width: 64%;
+    height: 100%;
 
-    .main-important-banner {
-      display: inline-block;
-      width: 64%;
+    .main-important-banner-image {
+      width: 100%;
       height: 100%;
-
-      .main-important-banner-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 0 30px 30px 0;
-      }
-    }
-
-    .main-important-notice {
-      width: 34%;
-      height: 100%;
-      border-radius: 30px 0 0 30px;
-      float: right;
-      background-color: #FFF3AB;
-      padding: 30px 0;
-
-      .main-important-notice-inner {
-        width: 100%;
-        height: 100%;
-        overflow-y: scroll;
-      }
+      object-fit: cover;
+      border-radius: 0 30px 30px 0;
     }
   }
 
-  .main-today-position {
-    width: 100vw;
-    min-width: 1050px;
-    margin-top: 70px;
+  .main-important-notice {
+    width: 34%;
+    height: 100%;
+    border-radius: 30px 0 0 30px;
+    float: right;
+    background-color: #FFF3AB;
+    padding: 30px 0;
 
-    .main-today-position-inner {
-      width: 1050px;
-      margin: 0 auto;
+    .main-important-notice-inner {
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+    }
+  }
+}
 
-      .main-today-position--title {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 30px;
-        line-height: 51px;
-        color: $dark-black;
-      }
+.main-today-position {
+  width: 100vw;
+  min-width: 1050px;
+  margin-top: 70px;
 
-      .main-today-position--card {
-        display: flex;
-        justify-content: space-between;
-      }
+  .main-today-position-inner {
+    width: 1050px;
+    margin: 0 auto;
+
+    .main-today-position--title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 51px;
+      color: $dark-black;
+    }
+
+    .main-today-position--card {
+      display: flex;
+      justify-content: space-between;
     }
   }
 }
