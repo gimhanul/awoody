@@ -26,11 +26,12 @@ export default function Main() {
             </div>
             <div className="main-today-position">
                 <div className="main-today-position-inner">
-                    <p className="main-today-position--title">오늘 내 위치</p>
+                    <p className="title">오늘 내 위치</p>
                     <div className="main-today-position--card">
                         {
                             todayPositionData.todayPosition.map(p => (
                                 <Position
+                                    size="small"
                                     position={p.position}
                                     classType={p.classType}
                                 />
