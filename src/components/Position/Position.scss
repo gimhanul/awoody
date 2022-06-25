@@ -1,12 +1,30 @@
 @import "../../styles/common";
 
 .position-card {
-  display: inline-block;
-  width: 248px;
-  height: 162px;
-  padding: 36px 28px;
   border: 2px solid $gray;
   border-radius: 30px;
+
+  &.small {
+    display: inline-block;
+    width: 248px;
+    height: 162px;
+    padding: 36px 28px;
+
+    .position-card--class-type {
+      margin-top: 10px;
+    }
+  }
+
+  &.big {
+    display: block;
+    width: 100%;
+    height: 117px;
+    padding: 36px 38px;
+
+    .position-card--class-type {
+      margin-left: 15px;
+    }
+  }
 
   .position-card-text {
     font-style: normal;
@@ -16,7 +34,7 @@
   }
 
   .position-card--class-type {
-    margin-top: 10px;
+    display: inline-block;
     .position-card--class-type-badge {
       display: inline-block;
       width: 15px;

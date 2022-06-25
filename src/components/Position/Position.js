@@ -4,7 +4,7 @@ import positionClassTypeColor from "../../utils/positionClassTypeColorConstant";
 export default function Position(props) {
 
     return (
-        <div className="position-card">
+        <div className={`position-card ${props.size}`}>
             <span className="position-card-text">{props.position}</span>
             <div className="position-card--class-type">
                 <span className="position-card--class-type-badge" style={{backgroundColor: positionClassTypeColor[props.classType]}}/>
