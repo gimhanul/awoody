@@ -1,0 +1,20 @@
+footer {
+  background-color: #F7F7F7;
+  color: #999999;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px 20px;
+
+  .footer-sns {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    a {
+      img {
+        width: 19px;
+        height: 19px;
+      }
+    }
+  }
+}
