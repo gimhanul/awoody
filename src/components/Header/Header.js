@@ -14,7 +14,7 @@ export default function Header() {
                 <div className="header-navigation-wrapper">
                     <ul className="header-navigation">
                         <li>
-                            <Link to="">
+                            <Link to="/position">
                                 위치
                             </Link>
                         </li>

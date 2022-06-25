@@ -3,6 +3,7 @@ import noticeData from "./notice.json";
 import todayPositionData from "./todayPosition.json";
 import Notice from "../../components/Notice/Notice";
 import Position from "../../components/Position/Position";
+import {Link} from "react-router-dom";
 
 export default function Main() {
     return (
@@ -26,7 +27,7 @@ export default function Main() {
             </div>
             <div className="main-today-position">
                 <div className="main-today-position-inner">
-                    <p className="title">오늘 내 위치</p>
+                    <Link to="/position"><p className="title">오늘 내 위치</p></Link>
                     <div className="main-today-position--card">
                         {
                             todayPositionData.todayPosition.map(p => (

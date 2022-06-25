@@ -1,0 +1,42 @@
+@import "../../styles/common";
+
+section {
+  min-width: 1050px;
+
+  .weekly-position {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 50px 40px;
+    background-color: white;
+
+    .weekly-position-top {
+
+      .weekly-position--days {
+        display: flex;
+        gap: 9px;
+
+        .weekly-position--days-day {
+          font-size: 20px;
+          font-weight: 400;
+          cursor: pointer;
+          &.active {
+            color: $main-purple;
+            text-decoration-line: underline;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    .weekly-position-days-day--position {
+      margin-top: 10px;
+      .weekly-position-days-day--position-position {
+        width: 970px;
+        margin-top: 25px;
+      }
+    }
+
+    .weekly-position-button {
+    }
+  }
+}
