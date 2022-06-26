@@ -2,10 +2,21 @@ import "./WeeklyPosition.scss";
 import weeklyPositionData from "./weeklyPosition.json";
 import Position from "../../components/Position/Position";
 import {useState} from "react";
+import {useContext, useEffect} from "react";
+import {UserContext} from "../../App";
+import {useNavigate} from "react-router-dom";
+import {checkObjectIsEmpty} from "../../utils/checkObjectIsEmpty";
 
 export default function WeeklyPosition() {
 
     const [activeIndex, setActiveIndex] = useState(0);
+
+    const {user} = useContext(UserContext);
+    const navigation = useNavigate();
+
+    useEffect(() => {
+        if (checkObjectIsEmpty(user)) navigation("/login");
+    })
 
     return (
         <section className="purple-background">
