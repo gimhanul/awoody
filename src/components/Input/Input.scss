@@ -1,0 +1,21 @@
+@import "../../styles/common";
+
+.input-text {
+  width: 100%;
+  height: 54px;
+  padding: 0 19px;
+  border: 1px solid $gray;
+  border-radius: 20px;
+  background-color: white;
+  font-size: 15px;
+  outline: none;
+  text-align: left;
+
+  &::placeholder {
+    color: $black;
+  }
+
+  &:focus {
+    border: 1px solid $black;
+  }
+}
