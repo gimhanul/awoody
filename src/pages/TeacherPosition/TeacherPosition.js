@@ -23,7 +23,6 @@ export default function TeacherPosition() {
         const sortedData = teacherPositionData.class.map(c => {
             c.position.sort((prev, curr) => getRemnantStudentsNumber(curr).length - getRemnantStudentsNumber(prev).length)
         });
-        console.log(sortedData);
     }, []);
 
     return (

@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import Login from "./pages/Login/Login";
 import {createContext, useMemo, useState} from "react";
 import TeacherPosition from "./pages/TeacherPosition/TeacherPosition";
+import TeacherPositionDetail from "./pages/TeacherPositionDetail/TeacherPositionDetail";
 
 
 export const UserContext = createContext({});
@@ -25,6 +26,7 @@ function App() {
                         <Route path="/login" element={<Login/>}/>
                         <Route path="/position" element={<WeeklyPosition/>}/>
                         <Route path="/teacher" element={<TeacherPosition/>}/>
+                        <Route path="/teacher/position" element={<TeacherPositionDetail/>}/>
                     </Routes>
                     <Footer/>
                 </BrowserRouter>

@@ -1,0 +1,135 @@
+@import "../../styles/common";
+
+section {
+  min-width: 1050px;
+
+  .teacher-position-detail {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 50px 40px;
+
+    .teacher-position-detail-header {
+      display: flex;
+      align-items: center;
+
+      .title {
+        display: inline-block;
+      }
+      .teacher-position-detail-header--badge {
+        background-color: white;
+        border-radius: 10px;
+        padding: 3px 6px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 31px;
+        margin-left: 15px;
+
+        .teacher-position-detail-header--badge-badge {
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          margin-right: 5px;
+        }
+      }
+    }
+    .teacher-position-detail-header--description {
+      display: block;
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    .teacher-position-detail-content {
+      margin-top: 50px;
+      height: 512px;
+      margin-bottom: 57px;
+
+      .teacher-position-detail-content--students {
+        display: inline-block;
+        width: 558px;
+        height: 512px;
+        float: left;
+        overflow: scroll;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        .teacher-position-detail-content--students-student {
+          width: 100%;
+          height: 15%;
+          font-weight: 500;
+          font-size: 35px;
+          line-height: 44px;
+          border-bottom: 1px solid $gray;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &.not-is-checked {
+            background-color: $checked-purple;
+          }
+        }
+      }
+
+      .teacher-position-detail-content--memo {
+        display: inline-block;
+        width: 392px;
+        height: 431px;
+        float: right;
+        padding: 41px 28px;
+
+        p {
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 44px;
+          padding-bottom: 14px;
+        }
+
+        .teacher-position-detail-content--memo-memo {
+          resize: none;
+          width: 100%;
+          height: 273px;
+          border: none;
+          outline: none;
+          font-weight: 300;
+          font-size: 22px;
+          line-height: 28px;
+        }
+      }
+    }
+
+    .teacher-position-detail-button {
+      float: right;
+      width: 392px;
+      margin-top: 11px;
+
+      button {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 41px;
+      }
+
+      .teacher-position-detail-button--defer {
+        background-color: #F5F5F5;
+        color: $black;
+        height: 73px;
+        width: 145px;
+        float: left;
+      }
+
+      .teacher-position-detail-button--check {
+        width: 227px;
+        height: 73px;
+        float: right;
+      }
+    }
+  }
+
+  .white-background {
+    background-color: white;
+    border: 2px solid $gray;
+    border-radius: 30px;
+  }
+}

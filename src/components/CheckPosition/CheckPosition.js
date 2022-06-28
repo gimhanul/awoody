@@ -7,7 +7,8 @@ export default function CheckPosition(props) {
     const isChecked = props.remnantStudents === 0;
 
     return (
-        <Link to="">
+        // TODO :: link 수정
+        <Link to="/teacher/position">
             <div className="check-position">
                 <p className="check-position--position">{props.position}</p>
                 <div className="check-position--class-type">
