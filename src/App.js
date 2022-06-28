@@ -5,6 +5,8 @@ import WeeklyPosition from "./pages/WeeklyPosition/WeeklyPosition";
 import Footer from "./components/Footer/Footer";
 import Login from "./pages/Login/Login";
 import {createContext, useMemo, useState} from "react";
+import TeacherPosition from "./pages/TeacherPosition/TeacherPosition";
+
 
 export const UserContext = createContext({});
 
@@ -22,6 +24,7 @@ function App() {
                         <Route path="/" element={<Main/>}/>
                         <Route path="/login" element={<Login/>}/>
                         <Route path="/position" element={<WeeklyPosition/>}/>
+                        <Route path="/teacher" element={<TeacherPosition/>}/>
                     </Routes>
                     <Footer/>
                 </BrowserRouter>

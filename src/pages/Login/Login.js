@@ -26,6 +26,7 @@ export default function Login() {
         if (loginInput.id === "gimhanul" && loginInput.password === "gimhanul") {
             const user = {
                 name: "김한울",
+                studentNumber: 2102,
                 authority: "학생"
             }
             setUser(user);
@@ -36,7 +37,7 @@ export default function Login() {
                 authority: "선생님"
             }
             setUser(user);
-            navigate("/");
+            navigate("/teacher");
         } else {
             alert("아이디 또는 비밀번호 오류입니다.")
         }

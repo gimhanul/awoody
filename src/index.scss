@@ -13,8 +13,13 @@ body {
   background-color: white;
 }
 
+header {
+  z-index: 5;
+}
+
 section {
   width: 100vw;
+  z-index: 1;
 }
 
 ul {
