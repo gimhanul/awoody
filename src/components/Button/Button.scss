@@ -1,0 +1,15 @@
+@import "../../styles/common";
+
+.button {
+  width: 133px;
+  height: 40px;
+  background-color: $main-purple;
+  color: white;
+  border-radius: 15px;
+  border: none;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 35px;
+}

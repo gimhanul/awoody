@@ -1,0 +1,6 @@
+{
+  "classTime":8,
+  "position":"2학년 1반 교실",
+  "classType":"자습",
+  "students":[{"user":{"name":"김준서","studentNumber":2101 },"classType":"자습","isChecked":true },{"user":{"name":"김한울","studentNumber":2102 },"classType":"자습","isChecked":true },{"user":{"name":"박다은","studentNumber":2103 },"classType":"자습","isChecked":true },{"user":{"name":"송주영","studentNumber":2105 },"classType":"자습","isChecked":true },{"user":{"name":"우수경","studentNumber":2106 },"classType":"자습","isChecked":true },{"user":{"name":"이규진","studentNumber":2107 },"classType":"자습","isChecked":true},{"user":{"name":"이동호","studentNumber":2108 },"classType":"자습","isChecked":true },{"user":{"name":"이동훈","studentNumber":2109 },"classType":"자습","isChecked":true },{"user":{"name":"이태현","studentNumber":2110 },"classType":"자습","isChecked":true },{"user":{"name":"전수향","studentNumber":2111 },"classType":"자습","isChecked":true },{"user":{"name":"정동겸","studentNumber":2112 },"classType":"자습","isChecked":true },{"user":{"name":"정승민","studentNumber":2113 },"classType":"자습","isChecked":true },{"user":{"name":"조수현","studentNumber":2114 },"classType":"자습","isChecked":true },{"user":{"name":"진애란","studentNumber":2115 },"classType":"자습","isChecked":true }]
+}
