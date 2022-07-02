@@ -7,7 +7,7 @@ import Login from "./pages/Login/Login";
 import {createContext, useMemo, useState} from "react";
 import TeacherPosition from "./pages/TeacherPosition/TeacherPosition";
 import TeacherPositionDetail from "./pages/TeacherPositionDetail/TeacherPositionDetail";
-
+import ScrollToTop from "./utils/ScrollToTop";
 
 export const UserContext = createContext({});
 
@@ -21,13 +21,15 @@ function App() {
             <UserContext.Provider value={userValue}>
                 <BrowserRouter>
                     <Header/>
-                    <Routes>
-                        <Route path="/" element={<Main/>}/>
-                        <Route path="/login" element={<Login/>}/>
-                        <Route path="/position" element={<WeeklyPosition/>}/>
-                        <Route path="/teacher" element={<TeacherPosition/>}/>
-                        <Route path="/teacher/position" element={<TeacherPositionDetail/>}/>
-                    </Routes>
+                    <ScrollToTop>
+                        <Routes>
+                            <Route path="/" element={<Main/>}/>
+                            <Route path="/login" element={<Login/>}/>
+                            <Route path="/position" element={<WeeklyPosition/>}/>
+                            <Route path="/teacher" element={<TeacherPosition/>}/>
+                            <Route path="/teacher/position" element={<TeacherPositionDetail/>}/>
+                        </Routes>
+                    </ScrollToTop>
                     <Footer/>
                 </BrowserRouter>
             </UserContext.Provider>

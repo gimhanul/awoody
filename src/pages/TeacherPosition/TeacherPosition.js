@@ -9,20 +9,23 @@ import CheckPosition from "../../components/CheckPosition/CheckPosition";
 export default function TeacherPosition() {
 
     const [activeIndex, setActiveIndex] = useState(0);
+    const [position, setPosition] = useState(teacherPositionData);
 
     const {user} = useContext(UserContext);
     const navigation = useNavigate();
 
     useEffect(() => {
-        if (checkObjectIsEmpty(user)) navigation("/login");
-    })
+        checkObjectIsEmpty(user) && navigation("/login");
+    }, []);
 
     const getRemnantStudentsNumber = p => p.remnantStudents.filter(s => !s.isChecked);
 
     useEffect(() => {
-        const sortedData = teacherPositionData.class.map(c => {
+        position.class.map(c => {
             c.position.sort((prev, curr) => getRemnantStudentsNumber(curr).length - getRemnantStudentsNumber(prev).length)
         });
+
+        setPosition({...position});
     }, []);
 
     return (
@@ -32,7 +35,7 @@ export default function TeacherPosition() {
                     <p className="title">오늘, 학생들의 위치</p>
                     <ul className="today-students-position--class">
                         {
-                            teacherPositionData.class.map((d, index) => (
+                            position.class.map((d, index) => (
                                 <li className={`today-students-position--class-class ${activeIndex === index ? "active" : ""}`}
                                     onClick={() => setActiveIndex(index)}>
                                     {d.classTime}교시
@@ -43,7 +46,7 @@ export default function TeacherPosition() {
 
                     <div className="today-students-position--position">
                         {
-                            teacherPositionData.class[activeIndex].position.map(p => (
+                            position.class[activeIndex].position.map(p => (
                                 <div className="today-students-position--position-position">
                                     <CheckPosition
                                         id={p.id}
