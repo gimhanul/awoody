@@ -14,8 +14,8 @@ export default function TeacherPosition() {
     const navigation = useNavigate();
 
     useEffect(() => {
-        if (checkObjectIsEmpty(user)) navigation("/login");
-    })
+        checkObjectIsEmpty(user) && navigation("/login");
+    }, []);
 
     const getRemnantStudentsNumber = p => p.remnantStudents.filter(s => !s.isChecked);
 

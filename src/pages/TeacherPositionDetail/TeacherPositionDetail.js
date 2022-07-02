@@ -1,10 +1,20 @@
 import "./TeacherPositionDetail.scss";
 import teacherPositionData from "./teacherPositionDetail.json";
 import Button from "../../components/Button/Button";
-import {useEffect, useState} from "react";
+import {useContext, useEffect, useState} from "react";
 import positionClassTypeColor from "../../utils/positionClassTypeColorConstant";
+import {checkObjectIsEmpty} from "../../utils/checkObjectIsEmpty";
+import {useNavigate} from "react-router-dom";
+import {UserContext} from "../../App";
 
 export default function TeacherPositionDetail() {
+
+    const navigation = useNavigate();
+    const {user} = useContext(UserContext);
+
+    useEffect(() => {
+        checkObjectIsEmpty(user) && navigation("/login");
+    }, []);
 
     const [students, setStudents] = useState([]);
 
