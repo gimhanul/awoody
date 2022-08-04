@@ -55,7 +55,7 @@ export default function EditPositionModal(props) {
                                     onClick={() => setPositionInputIndex(index)}
                                 >
                                     <img className="position-search-result--gym"
-                                         src={p.gym ? "./images/heart.png" : "./images/filled-heart.png"} alt="gym"/>
+                                         src={p.gym ? "./images/filled-heart.png" : "./images/heart.png"} alt="gym"/>
                                     <span className="position-search-result--position">{p.position}</span>
                                 </div>
                             ))
