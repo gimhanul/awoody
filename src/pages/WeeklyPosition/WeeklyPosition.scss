@@ -6,7 +6,7 @@ section {
   .weekly-position {
     width: 1050px;
     margin: 0 auto;
-    padding: 50px 40px;
+    padding: 36px 40px;
     background-color: white;
 
     .weekly-position-top {
@@ -37,6 +37,12 @@ section {
     }
 
     .weekly-position-button {
+      margin-top: 30px;
+      text-align: right;
+
+      .weekly-position-button-cancel {
+        margin-right: 15px;
+      }
     }
   }
 }

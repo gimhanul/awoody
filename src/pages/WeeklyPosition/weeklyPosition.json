@@ -7,22 +7,26 @@
         {
           "classTime": 8,
           "position": "2학년 2반 교실",
-          "classType": "방과후"
+          "classType": "방과후",
+          "isChecked": false
         },
         {
           "classTime": 9,
           "position": "2학년 2반 교실",
-          "classType": "방과후"
+          "classType": "방과후",
+          "isChecked": false
         },
         {
           "classTime": 10,
           "position": "2학년 1반 교실",
-          "classType": "자습"
+          "classType": "자습",
+          "isChecked": false
         },
         {
           "classTime": 10,
           "position": "2학년 1반 교실",
-          "classType": "자습"
+          "classType": "자습",
+          "isChecked": false
         }
       ]
     },
@@ -32,22 +36,26 @@
         {
           "classTime": 8,
           "position": "객체지향프로그래밍실",
-          "classType": "방과후"
+          "classType": "방과후",
+          "isChecked": false
         },
         {
           "classTime": 9,
           "position": "객체지향프로그래밍실",
-          "classType": "방과후"
+          "classType": "방과후",
+          "isChecked": false
         },
         {
           "classTime": 10,
           "position": "객체지향프로그래밍실",
-          "classType": "방과후"
+          "classType": "방과후",
+          "isChecked": false
         },
         {
           "classTime": 10,
           "position": "객체지향프로그래밍실",
-          "classType": "방과후"
+          "classType": "방과후",
+          "isChecked": false
         }
       ]
     },
@@ -57,22 +65,26 @@
         {
           "classTime": 8,
           "position": "2학년 2반 교실",
-          "classType": "방과후"
+          "classType": "방과후",
+          "isChecked": false
         },
         {
           "classTime": 9,
           "position": "2학년 2반 교실",
-          "classType": "방과후"
+          "classType": "방과후",
+          "isChecked": false
         },
         {
           "classTime": 10,
           "position": "베르3실",
-          "classType": "스터디"
+          "classType": "스터디",
+          "isChecked": false
         },
         {
           "classTime": 10,
           "position": "베르3실",
-          "classType": "스터디"
+          "classType": "스터디",
+          "isChecked": false
         }
       ]
     },
@@ -82,22 +94,26 @@
         {
           "classTime": 8,
           "position": "베르3실",
-          "classType": "동아리"
+          "classType": "동아리",
+          "isChecked": false
         },
         {
           "classTime": 9,
           "position": "베르3실",
-          "classType": "동아리"
+          "classType": "동아리",
+          "isChecked": false
         },
         {
           "classTime": 10,
           "position": "베르3실",
-          "classType": "동아리"
+          "classType": "동아리",
+          "isChecked": false
         },
         {
           "classTime": 10,
           "position": "베르3실",
-          "classType": "동아리"
+          "classType": "동아리",
+          "isChecked": false
         }
       ]
     }

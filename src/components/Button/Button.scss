@@ -12,4 +12,10 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 35px;
+
+  &.white-button {
+    background-color: white;
+    border: 2px solid $gray;
+    color: $black;
+  }
 }
