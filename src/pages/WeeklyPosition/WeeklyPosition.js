@@ -6,10 +6,12 @@ import {useContext, useEffect} from "react";
 import {UserContext} from "../../App";
 import {useNavigate} from "react-router-dom";
 import {checkObjectIsEmpty} from "../../utils/checkObjectIsEmpty";
+import Button from "../../components/Button/Button";
 
 export default function WeeklyPosition() {
 
     const [activeIndex, setActiveIndex] = useState(0);
+    const [editMode, setEditMode] = useState(false);
 
     const {user} = useContext(UserContext);
     const navigation = useNavigate();
@@ -43,6 +45,8 @@ export default function WeeklyPosition() {
                                     size="big"
                                     position={p.position}
                                     classType={p.classType}
+                                    editMode={editMode}
+                                    startEditMode={() => setEditMode(true)}
                                 />
                             </li>
                         ))
@@ -50,6 +54,12 @@ export default function WeeklyPosition() {
                 </ul>
 
                 <div className="weekly-position-button">
+                    {editMode &&
+                        <Button
+                            text="수정하기"
+                            willDo={() => console.log("수정수정")}
+                        />
+                    }
                 </div>
             </div>
         </section>
