@@ -9,12 +9,13 @@ export default function Position(props) {
             {props.editMode &&
                 <div className="position-check-wrapper">
                     <Check
-                        isChecked={true}
+                        isChecked={props.isChecked}
+                        willDo={props.toggleCheck}
                         className="position-check"
                     />
                 </div>
             }
-            <div className={`position-card ${props.editMode && "edit-mode"}`} onDoubleClick={props.startEditMode}>
+            <div className={`position-card ${props.editMode && "edit-mode"} ${props.isChecked && "purple-background"}`} onDoubleClick={props.startEditMode}>
                 <span className="position-card-text">{props.position}</span>
                 <div className="position-card--class-type">
                     <span className="position-card--class-type-badge"
