@@ -9,7 +9,7 @@ import positionClassTypeColor from "../../utils/positionClassTypeColorConstant";
 export default function EditPositionModal(props) {
 
     const [typeInput, setTypeInput] = useState("자습")
-    const [positionInput, setPositionInput] = useState("")
+    const [positionInputIndex, setPositionInputIndex] = useState(null)
 
     return (
         <Modal
@@ -28,7 +28,10 @@ export default function EditPositionModal(props) {
                         <span className="edit-position-modal--header-type-input-show">▾</span>
                         <ul className="edit-position-modal--header-type-input--list">
                             {TypeData.types.map(t => (
-                                <li className="edit-position-modal--header-type-input--list-item">
+                                <li
+                                    className="edit-position-modal--header-type-input--list-item"
+                                    onClick={() => setTypeInput(t)}
+                                >
                                     <span className="edit-position-modal--header-type-input-badge"
                                           style={{backgroundColor: positionClassTypeColor[t]}}/>
                                     <span>{t}</span>
@@ -46,8 +49,11 @@ export default function EditPositionModal(props) {
                     </div>
                     <div className="edit-position-modal--content-search-result">
                         {
-                            PositionData.position.map(p => (
-                                <div className="position-search-result">
+                            PositionData.position.map((p, index) => (
+                                <div
+                                    className={`position-search-result ${index === positionInputIndex ? "purple-background" : ""}`}
+                                    onClick={() => setPositionInputIndex(index)}
+                                >
                                     <img className="position-search-result--gym"
                                          src={p.gym ? "./images/heart.png" : "./images/filled-heart.png"} alt="gym"/>
                                     <span className="position-search-result--position">{p.position}</span>
