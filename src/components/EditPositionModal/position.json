@@ -1,0 +1,19 @@
+{
+  "position": [
+    {
+      "gym": true,
+      "position": "2학년 1반 교실",
+      "isChecked": false
+    },
+    {
+      "gym": true,
+      "position": "객체지향프로그래밍실",
+      "isChecked": false
+    },
+    {
+      "gym": false,
+      "position": "1학년 1반 교실",
+      "isChecked": false
+    }
+  ]
+}
