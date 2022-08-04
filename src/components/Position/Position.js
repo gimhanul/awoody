@@ -15,7 +15,10 @@ export default function Position(props) {
                     />
                 </div>
             }
-            <div className={`position-card ${props.editMode && "edit-mode"} ${props.isChecked && "purple-background"}`} onDoubleClick={props.startEditMode}>
+            <div className={`position-card ${props.editMode ? "edit-mode" : ""} ${props.isChecked ? "purple-background" : ""}`}
+                 onDoubleClick={props.startEditMode}
+                 onClick={props.editMode && props.toggleCheck}
+            >
                 <span className="position-card-text">{props.position}</span>
                 <div className="position-card--class-type">
                     <span className="position-card--class-type-badge"

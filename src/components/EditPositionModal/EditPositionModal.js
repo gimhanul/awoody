@@ -66,11 +66,14 @@ export default function EditPositionModal(props) {
                     <Button
                         text="취소"
                         willDo={props.closeModal}
-                        className="edit-position-modal--buttons-cancel"
+                        className="edit-position-modal--buttons-cancel white-button"
                     />
                     <Button
                         text="수정하기"
-                        willDo={props.editWeeklyPosition}
+                        willDo={() => {
+                            props.editWeeklyPosition(typeInput, PositionData.position[positionInputIndex].position)
+                            props.closeModal()
+                        }}
                         className="edit-position-modal--buttons-edit"
                     />
                 </div>

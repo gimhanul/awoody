@@ -27,15 +27,31 @@ export default function WeeklyPosition() {
         )
     }
 
+    const editWeeklyPosition = (typeInput, positionInput) => {
+        for (let i = 0; i < weeklyPosition.length; i++) {
+            for (let j = 0; j < weeklyPosition[i].position.length; j++) {
+                if (weeklyPosition[i].position[j].isChecked) {
+                    weeklyPosition[i].position[j].position = positionInput;
+                    weeklyPosition[i].position[j].classType = typeInput;
+                }
+            }
+        }
+
+        setWeeklyPosition([...weeklyPosition])
+        setEditMode(false)
+    }
+
     useEffect(() => {
         if (checkObjectIsEmpty(user)) navigation("/login");
     })
 
     useEffect(() => {
-        let weeklyPosition = [...weeklyPositionData.week];
-        weeklyPosition.forEach(w => w.position.forEach(p => p.isChecked = false));
-        setWeeklyPosition(weeklyPosition);
-    }, [])
+        if (!editMode) {
+            let weeklyPosition = [...weeklyPositionData.week];
+            weeklyPosition.forEach(w => w.position.forEach(p => p.isChecked = false));
+            setWeeklyPosition(weeklyPosition);
+        }
+    }, [editMode])
 
     return (
         <>
@@ -67,8 +83,10 @@ export default function WeeklyPosition() {
                                         toggleCheck={() => toggleCheck(index)}
                                         editMode={editMode}
                                         startEditMode={() => {
-                                            setEditMode(true)
-                                            toggleCheck(index)
+                                            if (!editMode) {
+                                                setEditMode(true)
+                                                toggleCheck(index)
+                                            }
                                         }}
                                     />
                                 </li>
@@ -78,10 +96,17 @@ export default function WeeklyPosition() {
 
                     <div className="weekly-position-button">
                         {editMode &&
-                            <Button
-                                text="수정하기"
-                                willDo={() => setEditPositionModalIsOpen(true)}
-                            />
+                            <>
+                                <Button
+                                    text="취소"
+                                    willDo={() => setEditMode(false)}
+                                    className="white-button weekly-position-button-cancel"
+                                />
+                                <Button
+                                    text="수정하기"
+                                    willDo={() => setEditPositionModalIsOpen(true)}
+                                />
+                            </>
                         }
                     </div>
                 </div>
@@ -90,7 +115,7 @@ export default function WeeklyPosition() {
                 isOpen={editPositionModalIsOpen}
                 closeModal={() => setEditPositionModalIsOpen(false)}
                 weeklyPosition={weeklyPosition}
-                editWeeklyPosition={() => console.log("변경변경 ㅋㅋ")}
+                editWeeklyPosition={editWeeklyPosition}
             />
         </>
     )
