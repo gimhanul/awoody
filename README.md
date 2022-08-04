@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# 😳 학생 - 자습 감독 선생님 사이의 출석 체크 도우미, Awoody
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> 2022 BSSM Web Programming 시간에 수행평가로 한 개인 프로젝트입니다.
 
-## Available Scripts
+### ∙∙∙ What's the problem?
 
-In the project directory, you can run:
+```
+- 방과후 자습 시간에 학생들이 방과후, 대회 준비 등의 이유로 뿔뿔이 흩어져 있다.
+- 이를 자습 감독 선생님이 일일히 출석 체크하기 힘들다.
+- 학생들 또한 자신의 위치를 그날 자습 감독 선생님을 찾아 말씀드리기 힘들다.
+- 기존 자습 출석부는 수기로 관리되고 있다.
+```
+### ∙∙∙ Solution to solve the problem
 
-### `npm start`
+자습 감독 선생님이 학생들이 어디있는 지 쉽게 확인하기 위한, 학생 - 자습 감독 선생님 사이의 출석 체크 도우미 Web Solution, Awoody
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### ∙∙∙ Requirements
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [ ] 유저는 학생/선생님 등의 정보로 회원가입 할 수 있다.
+- [x] 유저는 로그인할 수 있다.
+- [x] 학생은 본인의 8, 9, 10, 11 교시 위치를 등록할 수 있다.
+- [x] 학생, 선생님은 실별로 학생들의 위치를 파악할 수 있다.
+- [x] 선생님은 학생들의 출석 체크를 할 수 있다.
+- [ ] 학생은 본인의 방과후, 스터디, 동아리 일정을 미리 등록해 자동으로 등록하도록 할 수 있다.
 
-### `npm test`
+### ∙∙∙ Skills and Tools
+`#ReactJS` `#JavaScript` `#Context-API` `#react-router-dom` `#scss`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`#Git` `#GitHub` `#Vercel` `#WebStorm`
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### ∙∙∙ Result
+> [이곳](https://awoody.vercel.app/)에서 직접 사용할 수 있습니다.
